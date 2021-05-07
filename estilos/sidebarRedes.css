@@ -1,0 +1,91 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.contenedor-barra{
+	width: 1em;
+	max-width: 3.125em;
+	position: fixed;
+	left: -0.5em;
+	top: 20.5em;
+	padding: 0.6em;
+}
+.contenedor-barra a{
+	display: block;
+	width: 3.125em;
+	height: 3.125em;
+	line-height: 3.125em;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.125em;
+	position: relative;
+	transition: all 500ms ease;
+	color: rgb(250, 248, 248);
+}
+
+.contenedor-barra .facebook{
+	background: #3b5998;
+	border-radius: 0px 5px 0px 0px;
+    background-image: url(../imagesRedesSociales/1.jpg);
+    background-size: contain;
+    
+}
+.contenedor-barra .youtube{
+	background: #e52a23;
+    border-radius: 0px 5px 0px 0px;
+    background-image: url(../imagesRedesSociales/youtube.png);
+    background-size: contain;
+}
+.contenedor-barra .instagram{
+	background: #cc1b97;
+    border-radius: 0px 5px 0px 0px;
+    background-image: url(../imagesRedesSociales/instagram.png);
+    background-size: contain;
+}
+.contenedor-barra .github{
+	background: #b3b305;
+    border-radius: 0px 5px 0px 0px;
+    background-image: url(../imagesRedesSociales/github.gif);
+    background-size: contain;
+}
+.contenedor-barra .linkedIn{
+	background: #1274e4;
+    border-radius: 0px 5px 0px 0px;
+    background-image: url(../imagesRedesSociales/linkedin.jpg);
+    background-size: contain;
+}
+.contenedor-barra #nombre{
+	position: absolute;
+	background: #1c1c1c;
+	padding: 0em 0.5em;
+	height: 1.875em;
+	line-height: 1.875em;
+	text-align: center;
+	border-radius: 3px;
+	font-size: 0.9375em;
+	top:12px; left: 0px;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+	z-index: -1;
+}
+.contenedor-barra a:hover #nombre{
+	opacity: 1;
+	visibility: visible;
+	left: 4em;
+}
+.contenedor-barra #nombre:after{
+	position: absolute;
+	content: '';
+	border-left: 7px solid transparent;
+	border-right: 6px solid #e60505;
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	right: 100%;
+	top: 8px;
+}
+
+
+

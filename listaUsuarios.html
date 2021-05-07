@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Sergio martinez zapata">
+    <meta name="keywords" content="Videojuegos,retro,Noticias">
+        <!-- El siguiente enlace hace referencia a bootstrap, que es una libreria con css predefinido.-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="estilos/listaUsuarios.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <link href="estilos/index.css" rel="stylesheet" type="text/css">
+    <link href="estilos/NavegadorConLogo.css" rel="stylesheet" type="text/css">
+    <title>Usuarios</title>
+</head>
+
+<body background="Imagenes/17.jpg">
+    <nav class="navegacion">
+        <div class="logo"></div>
+        <ul class="menu">
+            <li style="float:left"><a href="index.html">Inicio</a></li>
+            <li style="float:left"><a href="tablapatreon.html">Patreon</a></li>
+            <li style="float:left"><a href="games.html">Novedades</a></li>
+            <li style="float:left"><a href="torneos.html">Torneos</a>
+            <li style="float:left"><a href="merchandising.html">Merchandising</a>
+                <ul class="submenu">
+                    <li><a href="marvel.html">Marvel</a></li>
+                    <li><a href="funkos.html">Funkos</a></li>
+                    <li><a href="dragonball.html">Dragon Ball</a></li>
+                    <li><a href="dccomic.html">DC Comic</a></li>
+                    <li><a href="retros.html">Retro</a></li>
+                </ul>
+            </li>
+            <li style="float:right"><a href="crearUsuario.html">CrearUsuario</a></li>
+            <li style="float:right"><a href="listaUsuarios.html">listaUsuarios</a></li>
+            <li style="float:right"><a href="crearNoticia.html">Crear Noticia</a></li>
+            <li style="float:right"><a href="noticias.html">Noticias</a></li>
+            <li style="float:right"><a href="aboutUs.html">About Me</a></li>
+        </ul>
+    </nav>
+    <div class="container" id="container" style="margin-bottom: 10em;margin-top: 2em;"></div>
+
+
+</body>
+<!-- Esto referencia las clases js que se necesitan para que firebase funcione -->
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+
+
+<script>
+    // Firebase nos proporciona la configuracion que necesitamos para que la base de datos 
+    // enlace con nuestro proyecto, hay que enlazar esta informacion en cada pagina que queramos usarla
+    var firebaseConfig = {
+        apiKey: "AIzaSyDenN5W8tXdulBAzKps-UUHV-qnuzHBlvE",
+        authDomain: "proyect-sergio.firebaseapp.com",
+        projectId: "proyect-sergio",
+        storageBucket: "proyect-sergio.appspot.com",
+        messagingSenderId: "795760409668",
+        appId: "1:795760409668:web:9e3ec2c1990f903ad61011",
+        measurementId: "G-180NN2SSQK"
+    };
+    // Esto inicializa nuestra configuracion anteriormente declarada
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+</script>
+
+<!-- Para que los datos de la base datos se carguen correctamente,
+     tenemos que hacer referencia al archivo JavaScript donde estan -->
+<script src="usuarios.js"></script>
+
+</html>

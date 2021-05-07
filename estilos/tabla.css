@@ -1,0 +1,39 @@
+
+/* En todas las celdas se han colapsado los bordes.
+Se ha determinado el ancho y altura de cada celda y se ha organizado el contenido.
+Para centrar verticalmente y horizontalmente el contenido se han usado las propiedades text-align
+(horizontal) y vertical-align (vertical).
+El selector tr:nth-child(odd) td significa todas las celdas que se encuentren anidadas en algún
+momento dentro de cualquier fila tr impar.*/
+
+
+table{
+    border-collapse:collapse;
+	margin: auto;
+}
+
+table caption{
+	font-size: 3em;
+	color: white;
+	margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+th,tr,td{
+	border:1px solid rgb(231, 227, 4);
+	width:9.375em;
+	height:2.8125em;
+	vertical-align:middle;
+	text-align:center;
+    font-size: 1.25em;
+	color: white;
+}
+th{
+	color:rgb(253, 247, 247);
+	background-color: #252525;
+}
+
+tr:nth-child(odd) td{
+	background-color:rgb(180, 180, 180);
+	color: black;
+}

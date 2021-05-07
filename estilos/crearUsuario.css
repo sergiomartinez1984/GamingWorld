@@ -1,0 +1,46 @@
+*{box-sizing:border-box;}
+
+body{
+	background-color: #333;
+}
+
+form{
+	width:30em;
+	padding:5em;
+	margin:auto;
+	background-color:#333;
+	color: beige;
+	overflow: hidden;
+}
+
+form label{
+	width:auto;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width:auto;
+	padding:0.1875em 0.625em;
+	border:1px solid #070707;
+	border-radius:3px;
+	background-color:#7eecec;
+	margin:0.5em 0;
+	display:inline-block;
+}
+
+textarea{
+	width:auto;
+	height:6.25em;
+	border:1px solid #0f0f0f;
+	border-radius:3px;
+	background-color:#68b4e7;			
+	margin:0.5em 0;
+    font-style: normal;
+	resize:none;
+	display:block;
+}
+.btn-group.btn-group-toogle1{
+	left: -4.06em;
+}
